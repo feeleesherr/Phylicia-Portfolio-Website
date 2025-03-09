@@ -109,9 +109,11 @@ $(document).ready(function () {
     function downloadFile() {
   // Replace 'your-document.pdf' with the path to your document
         const link = document.createElement('a');
-        link.href = 'your-document.pdf';
-        link.download = 'your-document.pdf'; // Set the name of the downloaded file
+        link.href = 'resume/Yuen%20Wag%20Glee%20Phylicia%20-%20Resume.pdf';
+        link.download = 'resume/Yuen%20Wag%20Glee%20Phylicia%20-%20Resume.pdf'; // Set the name of the downloaded 
+        document.body.appendChild(link);
         link.click();
+        document.body.removeChild(link);
     }
 
     // Contact Form 	
